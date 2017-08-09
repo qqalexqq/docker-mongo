@@ -12,7 +12,7 @@ if [ "$RS_NAME" != "" ]; then
 fi
 
 # CONFIGURE AUTHENTICATION
-if [ "$AUTH" == "y" ] && [ ! -f /confif/.admin_created ]; then
+if [ "$AUTH" == "y" ] && [ ! -f /data/db/.metadata/.admin_created ]; then
   /run/auth/create_admin.sh
 fi
 
